@@ -1,0 +1,394 @@
+:root{
+    --pink:#e84393;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+html{
+    font-size:  62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+header {
+  
+  
+  padding: 2rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  
+
+  background-image: url(../recursos/img/makeup-3081015_1920.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+
+
+}
+.contenedor{
+   max-width: 700px;
+   margin: auto;
+   background-color: #333 ; 
+   font-size: 15px;
+   margin-top: 0px;
+}
+
+header .menu-horizontal {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+   
+}
+header .menu-horizontal > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+
+}
+header .menu-horizontal > li:hover{
+     background-color: #F8BBD0 ;
+
+}
+/* se esconde el menu vertical*/
+header .menu-vertical {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(247, 242, 242, 0.5);
+}
+/*para que se muestre el menu vertical*/
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+}
+
+/*para que se marque donde va pasando el cursor en el menu vertical*/
+.menu-vertical li:hover{
+    background-color: black;
+}
+header .menu-vertical li a {
+    display: block;
+    color: beige;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
+.titulo{
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: rgba(255, 51, 153, .05);
+}
+.titulo span{
+    color: var(--pink);
+}
+
+.productos .cajaProductos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.productos .cajaProductos .caja{
+    flex: 1 1 10rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1 );
+    border-radius: .5rem;
+    border: .1rem solid rgba(0, 0, 0, .1 );
+    position: relative;
+}
+
+.productos .cajaProductos .caja .descuento{
+    position: absolute;
+    top: 1rem; left: 1rem;
+    padding: .7rem 1 rem;
+    font-size: 2rem;
+    color: var(--pink);
+    background: rgba(255, 51, 153, .05);
+    z-index: 1;
+    border-radius: .5rem;
+}
+
+.productos .cajaProductos .caja .image{
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow: hidden;
+
+}
+
+.productos .cajaProductos .caja .image .img{
+    height: 25rem;
+
+}
+.productos .cajaProductos .caja:hover .image img{
+    transform: scale(1.1);
+    
+}
+
+.productos .cajaProductos .caja .contenido h3{
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.productos .cajaProductos .caja .contenido .precio{
+    font-size: 2.5rem;
+    color:var(--pink);
+    font-weight: bolder;
+    padding: 1rem;
+}
+
+.productos .cajaProductos .caja .contenido .precio span{
+    font-size: 1.5rem;
+    color: #999;
+    font-weight: lighter;
+    text-decoration: line-through;
+}
+
+/*unas*/
+.unas{
+    max-width: 1100px;
+    width: 100%;
+    margin: 40px auto;
+    display: flex;
+}
+.unas .titulo{
+   
+        text-align: center;
+        font-size: 4rem;
+        color: #333;
+        padding: 1rem;
+        margin: 2rem 0;
+        background: rgba(255, 51, 153, .05);
+    
+}
+
+.unas .mostrador{
+    width: 100%;
+    transition: .5s ease;
+}
+.mostrador .fila{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.mostrador .fila .item{
+    max-width: 210px;
+    padding: 30px;
+    height: 250px;
+    text-align: center;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .3s;
+}
+.mostrador .fila .item:hover{
+     background-color: #e6e6e6;
+}
+.mostrador .fila .item img{
+    width: 100%;
+    margin: 30px 0;
+
+}
+
+.mostrador .fila .item .descripcion{
+    color: 707070;
+    font-weight: bold;
+}
+.mostrador .fila .item .precio{
+    color:#F8BBD0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.contacto .row{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap:1.5rem;
+    align-items: center;
+}
+.contacto .row form{
+    flex: 1 1 40rem;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0,.1);
+    border: .1rem solid rgba(0, 0, 0,.1);
+    background: #fff;
+    border-radius: .5rem;
+}
+
+.contacto .row .image{
+    flex:1 1 40rem;
+}
+
+.contacto .row .image img{
+    width: 100%;
+}
+
+.contacto .row form .box{
+    padding:1rem;
+    font-size: 1.7rem;
+    color: #333;
+    text-transform: none;
+    border:.1rem solid rgba(0, 0, 0,.1);
+    border-radius: .5rem;
+    margin:.7rem 0;
+    width: 100%;
+}
+
+.contacto .row form .box:focus{
+    border-color: var(--pink);
+}
+
+.contacto .row form textarea{
+    height: 15rem;
+    resize: none;
+}
+
+.contacto .row form .btn{
+  margin: auto;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 15px 40px;
+  cursor: pointer;
+
+}
+
+footer{
+    padding: 60px 0 ;
+    /* position: absolute; */
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #ff4f8b, #dff1ff);
+}
+footer .redes-sociales h2{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+  }
+footer::before{
+    /* content: ""; */
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    z-index: 1;
+    backdrop-filter: blur(5px);
+    border-top: 1px solid rgba(255, 255, 255, .5);
+
+
+}
+footer .color{
+    position: absolute;
+    filter: blur(150px);
+}
+footer .color:nth-child(1){
+    /* background: #ff359b; */
+    width: 500px;
+    height: 500px;
+    bottom: -150px;
+}
+
+footer .color:nth-child(2){
+    /* background: #ff359b; */
+    width: 500px;
+    height: 500px;
+    bottom: -150px;
+    left: 100px;
+}
+footer .color:nth-child(3){
+    /* background: #ff359b; */
+    width: 300px;
+    height: 300px;
+    bottom: 50px;
+    left: 100px;
+}
+footer .redes-sociales ul{
+     position: relative;
+     display: flex;
+     z-index: 2;
+}
+footer {
+    padding: 60px 0;
+}
+
+footer .redes-sociales ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px;
+}
+footer .redes-sociales ul li a{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 3rem;
+    border: 1px solid rgba(255, 255, 255, .4); /*borde cuadradito*/
+    border-right: 1px solid rgba(255, 255, 255, .2);
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 5px 45px rgba(0, 0, 0, .1 );
+    backdrop-filter: blur(2px);
+    transition: .5s;
+    overflow: hidden;
+}
+footer .redes-sociales ul li a:hover{
+    transform: translateY(-20px);
+}
+footer .redes-sociales ul li a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100%;
+    background: rgba(255, 255, 255, .5);
+    transform: skewX(45deg) translateX(150px);
+    transition-duration: .5s;
+
+}
+footer .redes-sociales ul li a:hover::before{
+    transform: skewX(45deg) translateX(-150px);
+}
+
+#copyRight {
+    text-align: center;
+    color: #e84393;
+    width: 100%;
+    justify-content: center;
+    font-size: 15px;
+
+}
+
+
+
+
+
+
+/*Media queries*/
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+}
+

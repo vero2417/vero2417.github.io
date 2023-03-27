@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cosmeticos</title>
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./fonts/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/x-icon" href="./recursos/img/maquillaje.ico" />
+  </head>
+  <body>
+    <header>
+      <div class="contenedor">
+        <!--menu-->
+        <nav class="menu">
+          <ul class="menu-horizontal">
+            <li><a href="#">Inicio</a></li>
+            <li>
+              <a href="#">Productos</a>
+              <ul class="menu-vertical">
+                <li><a href="#descuento">Productos en descuento</a></li>
+                <!-- <li><a href="#">Maquillaje</a></li> -->
+                <li><a href="#unas">Uñas</a></li>
+                <!-- <li><a href="#">Perfumes</a></li> -->
+              </ul>
+            </li>
+            <li>
+              <a href="#">Curso</a>
+              <ul class="menu-vertical">
+                <li><a href="#autoMaquillaje">AutoMaquillaje</a></li>
+                <!-- <li><a href="#">Keratinas</a></li>
+                <li><a href="#">Rubios Naturales</a></li>
+                <li><a href="#">Maquillaje Profesional</a></li> -->
+              </ul>
+            </li>
+            <li>
+              <a href="#">Servicio a Domicilio</a>
+              <ul class="menu-vertical">
+                <!-- <li><a href="#">Esmaltado Permanente</a></li>
+                <li><a href="#">Maquillaje Profesional</a></li> -->
+                <li><a href="#tintes">Tintes de Cabello</a></li>
+              </ul>
+            </li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="productos" id="productos">
+        <h1 class="titulo">Productos en <span> Descuento</span></h1>
+        <div class="cajaProductos">
+          <div class="caja">
+            <span class="descuento" id="descuento"> -10% </span>
+            <div class="image">
+              <img
+                src="./recursos/productos/pexels-polina-tankilevitch-3738359.jpg"
+                alt=""
+                width="250"
+                height="250"
+              />
+            </div>
+            <div class="contenido">
+              <h3>Plancha para el cabello</h3>
+              <div class="precio">$45.99 <span> $15.99</span></div>
+            </div>
+          </div>
+          <div class="caja">
+            <span class="descuento"> -10% </span>
+            <div class="image">
+              <img
+                src="./recursos/productos/shampoo.jpg"
+                alt=""
+                width="250"
+                height="250"
+              />
+            </div>
+            <div class="contenido">
+              <h3>Shampoo y Acondicionador</h3>
+              <div class="precio">$45.99 <span> $15.99</span></div>
+            </div>
+          </div>
+          <div class="caja">
+            <span class="descuento"> -10% </span>
+            <div class="image">
+              <img
+                src="./recursos/productos/sepillo.jpg"
+                alt=""
+                width="250"
+                height="250"
+              />
+            </div>
+            <div class="contenido">
+              <h3>Cepillos para cabello</h3>
+              <div class="precio">$14.34 <span> $15.99</span></div>
+            </div>
+          </div>
+          <div class="caja">
+            <span class="descuento"> -10% </span>
+            <div class="image">
+              <img
+                src="./recursos/productos/secadora.jpg"
+                alt=""
+                width="250"
+                height="250"
+              />
+            </div>
+            <div class="contenido">
+              <h3>Secadora de cabello</h3>
+              <div class="precio">$45.99 <span> $15.99</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--seccion de catalogo de uñas-->
+
+      <h1 class="titulo">Catálogo de <span> Uñas</span></h1>
+      <section class="unas" id="unas">
+        <div class="mostrador" id="mostrador">
+          <div class="fila">
+            <div class="item">
+              <div class="contenedor=foto">
+                <img
+                  src="./recursos/catalogoUñas/uñas1.jpg"
+                  alt=""
+                  width="250"
+                  height="250"
+                />
+                <p class="descripcion">Modelo Victoriano 1</p>
+                <span class="precio">$ 15.99</span>
+              </div>
+            </div>
+            <div class="item">
+              <div class="contenedor=foto">
+                <img
+                  src="./recursos/catalogoUñas/uñas2.jpg"
+                  alt=""
+                  width="250"
+                  height="250"
+                />
+                <p class="descripcion">Modelo Victoriano 2</p>
+                <span class="precio">$ 13.99</span>
+              </div>
+            </div>
+            <div class="item">
+              <div class="contenedor=foto">
+                <img
+                  src="./recursos/catalogoUñas/uñas3.jpg"
+                  alt=""
+                  width="250"
+                  height="250"
+                />
+                <p class="descripcion">Modelo Victoriano 3</p>
+                <span class="precio">$ 16.99</span>
+              </div>
+            </div>
+            <div class="item">
+              <div class="contenedor=foto">
+                <img
+                  src="./recursos/catalogoUñas/uñas4.jpg"
+                  alt=""
+                  width="250"
+                  height="250"
+                />
+                <p class="descripcion">Modelo Victoriano 4</p>
+                <span class="precio">$ 11.99</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="productos" id="autoMaquillaje">
+        <h1 class="titulo">Auto<span>Maquillaje </span></h1>
+        <div class="cajaProductos">
+          <div class="caja">
+            <span class="descuento" id="descuento"> -10% </span>
+            <div class="image">
+              <img
+                src="./recursos/auto maquillaje/maquillaje de dia.webp"
+                alt=""
+                width="250"
+                height="250"
+              />
+            </div>
+            <div class="contenido">
+              <h3>Maquillaje de día </h3>
+              <div class="precio">$65.99 <span> $15.99</span></div>
+            </div>
+          </div>
+          <div class="caja">
+            <span class="descuento"> -10% </span>
+            <div class="image">
+              <img
+                src="./recursos/auto maquillaje/maquillaje juvenil .jpg"
+                alt=""
+                width="250"
+                height="250"
+              />
+            </div>
+            <div class="contenido">
+              <h3>Maquillaje juvenil </h3>
+              <div class="precio">$45.99 <span> $10.99</span></div>
+            </div>
+          </div>
+          <div class="caja">
+            <span class="descuento"> -10% </span>
+            <div class="image">
+              <img
+                src="./recursos/auto maquillaje/maquillaje de noche c.jpg"
+                alt=""
+                width="250"
+                height="250"
+              />
+            </div>
+            <div class="contenido">
+              <h3>Maquillaje de noche</h3>
+              <div class="precio">$74.34 <span> $13.99</span></div>
+            </div>
+          </div>
+          <div class="caja">
+            <span class="descuento"> -10% </span>
+            <div class="image">
+              <img
+                src="./recursos/auto maquillaje/maquillaje-de-fantasia-carnaval-2015.webp"
+                alt=""
+                width="250"
+                height="250"
+              />
+            </div>
+            <div class="contenido">
+              <h3>Maquillaje de Fantasía </h3>
+              <div class="precio">$85.99 <span> $15.99</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="productos" id="tintes">
+        <h1 class="titulo">Tintes para<span> Cabello </span></h1>
+        <div class="cajaProductos">
+          <div class="caja">
+           
+            <div class="image">
+              <img
+                src="recursos/tintes/tinte rojo .jpg"
+               
+
+
+                alt=""
+                width="250"
+                height="250"
+              />
+            </div>
+            <div class="contenido">
+              <h3>Rojo Pasión</h3>
+              <div class="precio">$35.99</div>
+            </div>
+          </div>
+          <div class="caja">
+          
+            <div class="image">
+              <img
+                src="./recursos/tintes/tinte negro.jpg"
+                alt=""
+                width="250"
+                height="250"
+              />
+            </div>
+            <div class="contenido">
+              <h3>Negros Luminosos</h3>
+              <div class="precio">$65.99 </div>
+            </div>
+          </div>
+          <div class="caja">
+           
+            <div class="image">
+              <img
+                src="./recursos/tintes/tinte cafe.jpg"
+                alt=""
+                width="250"
+                height="250"
+              />
+            </div>
+            <div class="contenido">
+              <h3>Castaños Fabulosos</h3>
+              <div class="precio">$55.34 </div>
+            </div>
+          </div>
+          <div class="caja">
+         
+            <div class="image">
+              <img
+                src="./recursos/tintes/tinte rubio.jpg"
+                alt=""
+                width="250"
+                height="250"
+              />
+            </div>
+            <div class="contenido">
+              <h3>Rubios que iluminan</h3>
+              <div class="precio">$69.99 </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacto" id="contacto">
+        <h1 class="titulo"><span>Contacte con </span> nosotros</h1>
+        <div class="row">
+          <form action="https://formsubmit.co/verolm8282@gmail.com" method="POST">
+            <input type="text" placeholder="Asunto" class="box" name="subject" />
+            <input type="text" placeholder="Nombre" class="box" name="name" />
+            <input type="email" placeholder="Correo" class="box" name="email"/>
+
+            <textarea
+              class="box"
+              placeholder="mensaje"
+              id=""
+              cols="30"
+              rows="10"
+              name="comments"
+            ></textarea>
+            <input type="hidden" name="_next" value="http://127.0.0.1:5501/proyectoFinal/index.html"/>
+            <input type="hidden" name="_captcha" value="false"/>
+
+            <input type="submit" value="Enviar" class="btn" />
+          </form>
+          <div class="image">
+            <img src="./recursos/contacto/contacto.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="redes-sociales">
+        <h2>Siguenos</h2>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <ul>
+          <li>
+            <a href="http://www.facebook.com/"
+              ><i class="fab fa-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a href="http://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="http://www.instagram.com/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="http://www.youtube.com/"
+              ><i class="fab fa-youtube-play"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </li>
+        </ul>
+      </section>
+     
+    </footer>
+    <div id="copyRight">
+        <spam >&copy; Todos los derechos reservados - 2023.</spam>
+    </div >
+  </body>
+</html>
