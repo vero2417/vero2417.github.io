@@ -1,386 +1,176 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>cosmeticos</title>
-    <link rel="stylesheet" href="./css/estilos.css" />
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./fonts/font-awesome.min.css" />
-    <link
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="icon" type="image/x-icon" href="./recursos/img/maquillaje.ico" />
-  </head>
-  <body>
-    <header>
-      <div class="contenedor">
-        <!--menu-->
-        <nav class="menu">
-          <ul class="menu-horizontal">
-            <img src="./recursos/img/logo.png" alt="logo" width="95" height="95"></img>
-        
-        
-            <li><a href="#">Inicio</a></li>
-            <li>
-              <a href="#">Productos</a>
-              <ul class="menu-vertical">
-                <li><a href="#descuento">Productos en descuento</a></li>
-                <!-- <li><a href="#">Maquillaje</a></li> -->
-                <li><a href="#unas">Uñas</a></li>
-                <!-- <li><a href="#">Perfumes</a></li> -->
-              </ul>
-            </li>
-            <li>
-              <a href="#">Curso</a>
-              <ul class="menu-vertical">
-                <li><a href="#autoMaquillaje">AutoMaquillaje</a></li>
-                <!-- <li><a href="#">Keratinas</a></li>
-                <li><a href="#">Rubios Naturales</a></li>
-                <li><a href="#">Maquillaje Profesional</a></li> -->
-              </ul>
-            </li>
-            <li>
-              <a href="#">Servicio a Domicilio</a>
-              <ul class="menu-vertical">
-                <!-- <li><a href="#">Esmaltado Permanente</a></li>
-                <li><a href="#">Maquillaje Profesional</a></li> -->
-                <li><a href="#tintes">Tintes de Cabello</a></li>
-              </ul>
-            </li>
-            <li><a href="#contacto">Contacto</a></li>
+<head>
+  <title>KidKinder</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="css/coin-slider.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="css/menu.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="js/cufon-yui.js"></script>
+  <script type="text/javascript" src="js/cufon-aller.js"></script>
+  <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/coin-slider.min.js"></script>
+</head>
+
+<body>
+  <div class="main">
+    <div class="header">
+      <div class="header_resize">
+        <div class="menu_nav">
+          <ul>
+            <li class="active"><a href="index.html"><span><i class="fa fa-home"
+                    style="font-size:20px; color:#8fce00;"></i> Inicio</span></a></li>
+            <li><a href="services.html"><span><i class="fa fa-info" style="font-size:20px; color:#8fce00;"></i>
+                  Servicios</span></a></li>
+            <li><a href="about.html"><span><i class="fa fa-users" style="font-size:20px; color:#8fce00;"></i>
+                  Nosotros</span></a></li>
+            <li><a href="blog.html"><span><i class="fa fa-address-book" style="font-size:20px; color:#8fce00;"></i>
+                  Blog</span></a></li>
+            <li><a href="contact.html"><span><i class="fa fa-envelope" style="font-size:20px; color:#8fce00;"></i>
+                  Contacto</span></a></li>
+            <li><a href="galerie.html"><span><i class="fa fa-camera" style="font-size:20px; color:#8fce00;"></i>
+                  Galería</span></a></li>
+            <li><a href="login.html"><span><i class="fa fa-user-circle-o" style="font-size:20px; color:#8fce00;"></i>
+                  Login</span></a></li>
           </ul>
-        </nav>
-      </div>
-    </header>
-    <h1 class="center">BELLEZA MÁS ALLÁ DE LA BELLEZA</h1>
-
-    <main>
-      <section class="productos" id="productos">
-        <h1 class="titulo">Productos en <span> Descuento</span></h1>
-        <div class="cajaProductos">
-          <div class="caja">
-            <span class="descuento" id="descuento"> -10% </span>
-            <div class="image">
-              <img
-                src="./recursos/productos/pexels-polina-tankilevitch-3738359.jpg"
-                alt=""
-                width="250"
-                height="250"
-              />
-            </div>
-            <div class="contenido">
-              <h3>Plancha para el cabello</h3>
-              <div class="precio">$65.99 <span> $75.99</span></div>
-            </div>
-          </div>
-          <div class="caja">
-            <span class="descuento"> -10% </span>
-            <div class="image">
-              <img
-                src="./recursos/productos/shampoo.jpg"
-                alt=""
-                width="250"
-                height="250"
-              />
-            </div>
-            <div class="contenido">
-              <h3>Shampoo y Acondicionador</h3>
-              <div class="precio">$45.99 <span> $55.99</span></div>
-            </div>
-          </div>
-          <div class="caja">
-            <span class="descuento"> -10% </span>
-            <div class="image">
-              <img
-                src="./recursos/productos/sepillo.jpg"
-                alt=""
-                width="250"
-                height="250"
-              />
-            </div>
-            <div class="contenido">
-              <h3>Cepillos para cabello</h3>
-              <div class="precio">$14.34 <span> $15.99</span></div>
-            </div>
-          </div>
-          <div class="caja">
-            <span class="descuento"> -10% </span>
-            <div class="image">
-              <img
-                src="./recursos/productos/secadora.jpg"
-                alt=""
-                width="250"
-                height="250"
-              />
-            </div>
-            <div class="contenido">
-              <h3>Secadora de cabello</h3>
-              <div class="precio">$55.99 <span> $65.99</span></div>
-            </div>
-          </div>
         </div>
-      </section>
-      <!--seccion de catalogo de uñas-->
 
-      <h1 class="titulo">Catálogo de <span> Uñas</span></h1>
-      <section class="unas" id="unas">
-        <div class="mostrador" id="mostrador">
-          <div class="fila">
-            <div class="item">
-              <div class="contenedor=foto">
-                <img
-                  src="./recursos/catalogoUñas/uñas1.jpg"
-                  alt=""
-                  width="250"
-                  height="250"
-                />
-                <p class="descripcion">Modelo Victoriano 1</p>
-                <span class="precio">$ 15.99</span>
-              </div>
-            </div>
-            <div class="item">
-              <div class="contenedor=foto">
-                <img
-                  src="./recursos/catalogoUñas/uñas2.jpg"
-                  alt=""
-                  width="250"
-                  height="250"
-                />
-                <p class="descripcion">Modelo Victoriano 2</p>
-                <span class="precio">$ 13.99</span>
-              </div>
-            </div>
-            <div class="item">
-              <div class="contenedor=foto">
-                <img
-                  src="./recursos/catalogoUñas/uñas3.jpg"
-                  alt=""
-                  width="250"
-                  height="250"
-                />
-                <p class="descripcion">Modelo Victoriano 3</p>
-                <span class="precio">$ 16.99</span>
-              </div>
-            </div>
-            <div class="item">
-              <div class="contenedor=foto">
-                <img
-                  src="./recursos/catalogoUñas/uñas4.jpg"
-                  alt=""
-                  width="250"
-                  height="250"
-                />
-                <p class="descripcion">Modelo Victoriano 4</p>
-                <span class="precio">$ 11.99</span>
-              </div>
-            </div>
-          </div>
+        <div class="clr"></div>
+
+        <div class="logo">
+          <h1><a href="index.html"><i class="fa fa-book"
+                style="font-size:28px; color:#8fce00;"></i>Kid<span>Kinder</span> <small>Kids Learning Center
+                ...</small></a></h1>
         </div>
-      </section>
 
-      <section class="productos" id="autoMaquillaje">
-        <h1 class="titulo">Auto<span>Maquillaje </span></h1>
-        <div class="cajaProductos">
-          <div class="caja">
-            <span class="descuento" id="descuento"> -10% </span>
-            <div class="image">
-              <img
-                src="./recursos/auto maquillaje/maquillaje de dia.webp"
-                alt=""
-                width="250"
-                height="250"
-              />
-            </div>
-            <div class="contenido">
-              <h3>Maquillaje de día </h3>
-              <div class="precio">$65.99 <span> $75.99</span></div>
-            </div>
-          </div>
-          <div class="caja">
-            <span class="descuento"> -10% </span>
-            <div class="image">
-              <img
-                src="./recursos/auto maquillaje/maquillaje juvenil .jpg"
-                alt=""
-                width="250"
-                height="250"
-              />
-            </div>
-            <div class="contenido">
-              <h3>Maquillaje juvenil </h3>
-              <div class="precio">$80.99 <span> $90.99</span></div>
-            </div>
-          </div>
-          <div class="caja">
-            <span class="descuento"> -10% </span>
-            <div class="image">
-              <img
-                src="./recursos/auto maquillaje/maquillaje de noche c.jpg"
-                alt=""
-                width="250"
-                height="250"
-              />
-            </div>
-            <div class="contenido">
-              <h3>Maquillaje de noche</h3>
-              <div class="precio">$73.34 <span> $83.99</span></div>
-            </div>
-          </div>
-          <div class="caja">
-            <span class="descuento"> -10% </span>
-            <div class="image">
-              <img
-                src="./recursos/auto maquillaje/maquillaje-de-fantasia-carnaval-2015.webp"
-                alt=""
-                width="250"
-                height="250"
-              />
-            </div>
-            <div class="contenido">
-              <h3>Maquillaje de Fantasía </h3>
-              <div class="precio">$75.99 <span> $85.99</span></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="productos" id="tintes">
-        <h1 class="titulo">Tintes para<span> Cabello </span></h1>
-        <div class="cajaProductos">
-          <div class="caja">
-           
-            <div class="image">
-              <img
-                src="recursos/tintes/tinte rojo .jpg"
-               
-
-
-                alt=""
-                width="250"
-                height="250"
-              />
-            </div>
-            <div class="contenido">
-              <h3>Rojo Pasión</h3>
-              <div class="precio">$35.99</div>
-            </div>
-          </div>
-          <div class="caja">
-          
-            <div class="image">
-              <img
-                src="./recursos/tintes/tinte negro.jpg"
-                alt=""
-                width="250"
-                height="250"
-              />
-            </div>
-            <div class="contenido">
-              <h3>Negros Luminosos</h3>
-              <div class="precio">$65.99 </div>
-            </div>
-          </div>
-          <div class="caja">
-           
-            <div class="image">
-              <img
-                src="./recursos/tintes/tinte cafe.jpg"
-                alt=""
-                width="250"
-                height="250"
-              />
-            </div>
-            <div class="contenido">
-              <h3>Castaños Fabulosos</h3>
-              <div class="precio">$55.34 </div>
-            </div>
-          </div>
-          <div class="caja">
-         
-            <div class="image">
-              <img
-                src="./recursos/tintes/tinte rubio.jpg"
-                alt=""
-                width="250"
-                height="250"
-              />
-            </div>
-            <div class="contenido">
-              <h3>Rubios que iluminan</h3>
-              <div class="precio">$69.99 </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="contacto" id="contacto">
-        <h1 class="titulo"><span>Contacte con </span> nosotros</h1>
-        <div class="row">
-          <form action="https://formsubmit.co/verolm8282@gmail.com" method="POST">
-            <input type="text" placeholder="Asunto" class="box" name="subject" />
-            <input type="text" placeholder="Nombre" class="box" name="name" />
-            <input type="email" placeholder="Correo" class="box" name="email"/>
-
-            <textarea
-              class="box"
-              placeholder="mensaje"
-              id=""
-              cols="30"
-              rows="10"
-              name="comments"
-            ></textarea>
-            <input type="hidden" name="_next" value="http://127.0.0.1:5501/proyectoFinal/index.html"/>
-            <input type="hidden" name="_captcha" value="false"/>
-
-            <input type="submit" value="Enviar" class="btn" />
+        <div class="searchform">
+          <form id="formsearch" name="formsearch" method="" action="index.html">
+            <span>
+              <input name="editbox_search" class="editbox_search" id="editbox_search" maxlength="80"
+                value="Buscar en nuestro sitio" type="text" />
+            </span>
+            <input name="button_search" src="images/search.gif" class="button_search" type="image" />
           </form>
-          <div class="image">
-            <img src="./recursos/contacto/contacto.jpg" alt="" />
+        </div>
+
+        <br />
+        <div class="clr"></div>
+        <div class="slider">
+          <div id="coin-slider">
+            <a href="#"><img src="images/slide1.jpg" width="940" height="310" alt="" /> </a>
+            <a href="#"><img src="images/slide2.jpg" width="940" height="310" alt="" /> </a>
+            <a href="#"><img src="images/slide3.jpg" width="940" height="310" alt="" /> </a>
+            <a href="#"><img src="images/slide4.jpg" width="940" height="310" alt="" /> </a>
+          </div>
+          <div class="clr"></div>
+        </div>
+        <div class="clr"></div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="content_resize">
+        <div class="mainbar">
+
+          <div class="article">
+            <h2>
+              <span>Juega hoy,</span> aprende para siempre
+            </h2>
+            </p>
+            <div class="clr"></div>
+            <div class="img"><img src="images/bannerIndex.webp" width="650" height="195" alt="" class="fl" /></div>
+            <div class="post_content">
+              <p>
+                Somos una página para que niños y niñas entre 2 y 8 años de edad aprendan inglés con nuestros métodos de
+                Playlearning.
+                </a>El inglés es uno de los regalos más valiosos que puedes dar a tus hijos. Es mucho más fácil aprender
+                inglés en la infancia que en la edad adulta, y las recompensas son gratificantes e invaluables.
+                Playlearning significa 'aprender jugando' , con el Playlearning tu peque podrá desarrollar habilidades
+                como creatividad, colaboración, pensamiento crítico y comunicación. ¡Lánzate a esta grandiosa aventura!
+              </p>
+
+              <p class="spec"><a href="about.html" class="rm">Leer más</a></p>
+            </div>
+            <div class="clr"></div>
+          </div>
+
+        </div>
+
+        <div class="sidebar">
+          <div class="topnav">
+            <a href="javascript:void(0);" class="active" onclick="menu.displayMenu();">MENU</a>
+            <div id="myLinks">
+              <a href="index.html"><i class="fa fa-home" style="font-size:20px; color:#8fce00;"></i> Inicio</a>
+              <a href="services.html"> <i class="fa fa-info" style="font-size:20px; color:#8fce00;"></i> Servicios</a>
+              <a href="about.html"><i class="fa fa-users" style="font-size:20px; color:#8fce00;"></i> Nosotros</a>
+              <a href="blog.html"><i class="fa fa-address-book" style="font-size:20px; color:#8fce00;"></i> Blog</a>
+              <a href="contact.html"><i class="fa fa-envelope" style="font-size:20px; color:#8fce00;"></i> Contacto</a>
+              <a href="galerie.html"> <i class="fa fa-camera" style="font-size:20px; color:#8fce00;"></i> Galería</a>
+              <a href="login.html"> <i class="fa fa-user-circle-o" style="font-size:20px; color:#8fce00;"></i> Login</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="menu.displayMenu();">
+              <i class="fa fa-bars"></i>
+            </a>
           </div>
         </div>
-      </section>
-    </main>
-    <footer>
-      <section class="redes-sociales">
-        <h2>Siguenos</h2>
-        <div class="color"></div>
-        <div class="color"></div>
-        <div class="color"></div>
-        <ul>
-          <li>
-            <a href="http://www.facebook.com/"
-              ><i class="fab fa-facebook"></i
-            ></a>
-          </li>
-          <li>
-            <a href="http://www.twitter.com/"><i class="fab fa-twitter"></i></a>
-          </li>
-          <li>
-            <a href="http://www.instagram.com/"
-              ><i class="fab fa-instagram"></i
-            ></a>
-          </li>
-          <li>
-            <a href="http://www.youtube.com/"
-              ><i class="fab fa-youtube-play"></i
-            ></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-whatsapp"></i></a>
-          </li>
-        </ul>
-      </section>
-     
-    </footer>
-    <div id="copyRight">
-        <spam >&copy; Todos los derechos reservados - 2023.</spam>
-    </div >
-  </body>
+
+        <div class="clr"></div>
+      </div>
+    </div>
+    <div class="fbg">
+      <div class="fbg_resize">
+        <div class="col c1">
+          <h2><span><i class="fa fa-envelope" style="font-size:20px; color:#8fce00;"></i> Contacto</span> </h2>
+          <p class="contact_info"><i class="fa fa-thumb-tack" aria-hidden="true"></i> <a class="theme-link"
+              href="https://goo.gl/maps/5FcTLbiPn8Kvnx4dA" target="_blank">
+              1 km al norte de Standard Fruit Company Guápiles.
+            </a></p>
+          <p class="contact_info">
+            <span><i class="fa fa-calendar" aria-hidden="true"></i> Horario:</span> L a S de 8 am a 5 pm.<br />
+            <span><i class="fa fa-phone" aria-hidden="true"></i> Teléfono:</span><a class="theme-link"
+              href="tel:+50687394065" target="_blank">(506) 8739-4065</a><br />
+            <span><i class="fa fa-whatsapp" aria-hidden="true"></i> Whatsapp:</span> <a class="theme-link"
+              href="https://wa.me/50687394065" target="_blank">(506) 8739-4065</a><br />
+            <span><i class="fa fa-envelope-o" aria-hidden="true"></i> E-mail:</span> <a class="theme-link"
+              href="mailto:vvialesl@esuaca.ac.cr" target="_blank">vvialesl@esuaca.ac.cr</a>
+          </p>
+        </div>
+        <div class="col c2">
+          <h2><span><i class="fa fa-check-square" style="font-size:20px; color:#8fce00;"></i> Redes Sociales</span></h2>
+          <p>Clases en vivo y 100% online.</p>
+          <ul class="fbg_ul">
+            <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>
+                Facebook</a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>
+                Instragram</a></li>
+            <li><a href="https://twitter.com/?lang=es" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>
+                Twitter</a></li>
+          </ul>
+        </div>
+        <div class="col c3">
+          <h2><span><i class="fa fa-envelope" style="font-size:20px; color:#8fce00;"></i> Servicios</span> </h2>
+          <p>Clases en vivo y 100% online.</p>
+          <ul class="fbg_ul">
+            <li><a href="#"><i class="fa fa-cloud" aria-hidden="true"></i> Clases individuales.</a></li>
+            <li><a href="#"><i class="fa fa-cloud" aria-hidden="true"></i> Clases grupales.</a></li>
+            <li><a href="#"><i class="fa fa-cloud" aria-hidden="true"></i> Clases Play2Learn.</a></li>
+            <li><a href="#"> <i class="fa fa-credit-card" aria-hidden="true"></i> Pago en linea.</a></li>
+          </ul>
+        </div>
+        <div class="clr"></div>
+        <p style="text-align:center;"><i class="fa fa-copyright" aria-hidden="true"></i> Todos los derechos reservados.
+          Veronica Viales Lopez UACA 2023.</p>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/menu.js"></script>
+
+</body>
+
 </html>
